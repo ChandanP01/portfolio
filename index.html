@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandan Parida</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/71b375415a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-sharp fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-box">
+                <h1>Hi There, It's me</h1> <br>
+                <span class="text-1">Chandan Parida</span> <br>
+                <span class="text-2"></span>
+            </div>
+            <a href="images/cv.pdf" download class="btn btn-2">Download CV</a>
+        </div>
+    </div>
+
+    <!-- ABOUT ME -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/chandan1.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1> <br>
+                    <p>I'm a passionate and quick-witted learner, driven by an unyielding thirst for personal and
+                        professional growth. Currently, I'm immersed in an exhilarating journey of continuous
+                        self-improvement, always on the lookout for new horizons and eager to tackle fresh challenges.
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>DSA Problem Solving</span><br>I have skill in solving DSA problems</li>
+                            <li><span>Web Development</span><br>Develop interesting websites using
+                                HTML, CSS, JavaScript<br>Node Js, Express Js</li>
+                            <li><span>Programming Languages</span><br>C, Java, Python, JavaScript</li>
+                            <li><span>Libraries / Frameworks</span><br>Bootstrap, Telwind, React
+                            </li>
+                            <li><span>DataBases</span></br>mySql, MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Jan 2023 - March 2022</span><br>Internship at Glucian Pvt. Ltd, Bhubaneswar</li>
+                            <li><span>September 2023 - October 2023</span><br>Internship at Aspire Info Labs, Hyderabad</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>Schooling from Gadapokhari High School</li>
+                            <li><span>2021</span><br>Intermediate of Science from Khaira Higher Secondary School</li>
+                            <li><span>2025</span><br>Btech in Computer Science and Engineering from Gandhi Institute For
+                                Technology, Bhubaneswar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1> <br>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I offers a range of exceptional services tailored to transform your online presence. From
+                        captivating user interfaces to responsive layouts, their expertise in HTML, CSS, and JavaScript
+                        ensures visually stunning and functional websites. Trust me to deliver a digital masterpiece
+                        that captures your brand's essence and engages your audience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p> With a deep understanding of user psychology and an eye for stunning visuals, I create intuitive
+                        and visually appealing designs that enhance user experiences. From wireframing to prototyping,
+                        their services ensure seamless interactions and unforgettable journeys for every user.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>With a meticulous approach to design and a deep understanding of user psychology, I crafts
+                        intuitive and visually stunning mobile applications.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- projects -->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1> <br>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>Stay ahead of the weather with our intuitive app, delivering accurate forecasts and real-time
+                            updates.</p>
+                        <a href="https://chandanp01.github.io/weather-app/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Dictionary App</h3>
+                        <p>Expand your vocabulary on the go with our user-friendly dictionary app, providing
+                            definitions, synonyms, and example sentences.</p>
+                        <a href="https://chandanp01.github.io/Dictionary-app/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Digital Clock</h3>
+                        <p>Experience the convenience of our sleek digital clock app, providing accurate timekeeping and
+                            customizable features.</p>
+                        <a href="https://chandanp01.github.io/DigitalClock/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-4.png" height="100%" id="img">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>Effortlessly crunch numbers with our sleek and user-friendly digital calculator app. Fast,
+                            accurate, and convenient.</p>
+                        <a href="https://chandanp01.github.io/calculator/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1> <br>
+                    <p><a href="mailto:ckparida233021@gmail.com"><i
+                                class="fas fa-paper-plane"></i></a>ckparida233021@gmail.com</p>
+                    <p><a href="tel:9668058984"><i class="fas fa-phone-square-alt"></i></a>+91 9668058984</p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/cv.pdf" download class="btn btn-2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email id" required>
+                        <textarea name="Message" rows="6" placeholder="Any message for me"></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                    <span id="msg">Message sent successfully</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="copy-right">
+            <p>Copyright 2023 @ KumarChandan, made by ❤️ Chandan</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

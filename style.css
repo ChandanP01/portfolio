@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins:wght@400;500;600;700&family=Raleway&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+/* Home page */
+#header {
+    width: 100%;
+    height: 96vh;
+    background: url(/images/header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Nav Bar */
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.logo {
+    width: 70px;
+    border-radius: 50%;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Styling the text box */
+.header-box {
+    margin-top: 20%;
+    font-family: 'Belanosima', sans-serif;
+}
+
+.text-1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #ff004f;
+}
+
+.text-2 {
+    font-size: 2.9rem;
+    font-weight: 500;
+}
+
+#element {
+    color: #ff004f;
+    font-size: 3rem;
+}
+
+/* Styling the about me section */
+
+#about {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.sub-title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.tab-title {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 10;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.tab-contents ul li span {
+    color: #ae4063;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/* Styling the Services section*/
+
+#services {
+    padding: 30px 0;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div {
+    background: #262626;
+    padding: 40px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    transition: transform 0.5s;
+}
+
+.services-list div h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.services-list div i {
+    font-size: 5rem;
+    margin-bottom: 50px;
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    ;
+    display: inline-block;
+}
+
+.services-list div:hover {
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+/* Styling the project section */
+
+#projects {
+    padding: 50px 0;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    /* height: 100%; */
+    height: 0;
+    /*for hiding*/
+    width: 100%;
+    background: linear-gradient(#00000099, #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.layer a {
+    text-decoration: none;
+    color: #ff004f;
+    margin-top: 20px;
+    font-size: 1.6rem;
+    line-height: 60px;
+    background: #fff;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.btn {
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    margin: 50px auto;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #ff004f;
+    box-shadow: 0 0 20px #ff004f;
+}
+
+/* Styling the contact section */
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.contact-left p a i {
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 1.3rem;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #ff004f;
+}
+
+.btn.btn-2 {
+    display: inline-block;
+    background: #ff004f;
+}
+
+.btn-2:hover {
+    box-shadow: 0 0 20px #ff004f;
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+form .btn-2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 14px 60px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#msg {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #27fe01;
+    text-align: center;
+    width: fit-content;
+    display: none;
+}
+
+.copy-right {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 20px;
+    background: #262626;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+
+/* Hide the nav icon */
+nav .fa-sharp {
+    display: none;
+}
+
+/* --------CSS for Small Screen------- */
+@media only screen and (max-width: 600px) {
+    #header {
+        /* background-image: url(./images/IMG_7291-removebg-preview.png); */
+        background-size: cover;
+        /* background-position: center; */
+    }
+
+    .header-box {
+        margin-top: 100%;
+    }
+
+    .header-box .text-1 {
+        font-size: 30px;
+    }
+
+    .header-box h1 {
+        font-size: 20px;
+    }
+
+    .header-box .text-2 {
+        font-size: 25px;
+    }
+
+    #element {
+        font-size: 30px;
+    }
+
+    nav .fa-sharp {
+        display: block;
+        font-size: 2.1rem;
+    }
+
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-sharp {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .sub-title {
+        font-size: 1.8rem;
+    }
+
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+
+    .about-col-2 {
+        font-size: 1rem;
+    }
+
+    .tab-links {
+        font-size: 1.1rem;
+        margin-right: 20px;
+    }
+
+    .work #img {
+        height: 350px;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+    #msg{
+        font-size: 10px;
+    }
+    .copy-right {
+        font-size: 0.7em;
+    }
+}
